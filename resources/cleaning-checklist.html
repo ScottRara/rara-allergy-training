@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allergen Cleaning Checklist | RaRa Ramen</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .checklist-section {
+      background: white;
+      border: 2px solid var(--border-light);
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .checklist-section h3 {
+      color: var(--rara-red);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--rara-gold);
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .check-item:last-child { border-bottom: none; }
+    .checkbox {
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--rara-red);
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .sign-off {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 2px solid var(--border-light);
+    }
+    .sign-off-field {
+      border-bottom: 1px solid #999;
+      padding: 8px 0;
+      min-height: 30px;
+    }
+    .sign-off label { font-weight: 600; font-size: 0.9em; color: var(--text-secondary); }
+    @media print {
+      body { max-width: 100%; background: white; padding: 10px; }
+      .nav-bar, .module-footer { display: none; }
+      .section { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <a href="../index.html">&larr; Course Home</a>
+    <span>Resource</span>
+    <a href="instructor-guide.html">Instructor Guide &rarr;</a>
+  </div>
+
+  <div class="module-header">
+    <div class="module-number">Resource</div>
+    <h1>Allergen Cleaning Checklist</h1>
+    <div class="learning-objective">
+      <strong>Instructions:</strong> Complete this checklist each shift. Print, laminate, and use with a whiteboard marker for daily use.
+    </div>
+  </div>
+
+  <div class="section">
+    <p><strong>Date:</strong> _____________ &nbsp;&nbsp; <strong>Shift:</strong> AM / PM &nbsp;&nbsp; <strong>Completed By:</strong> _____________</p>
+  </div>
+
+  <div class="checklist-section">
+    <h3>Before Service</h3>
+    <div class="check-item"><div class="checkbox"></div><div>All benches and prep surfaces cleaned with warm water and detergent</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>All utensils, tongs, ladles washed in hot soapy water or dishwasher</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Separate allergen-free utensils (labelled/colour-coded) are clean and in place</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Chopping boards washed and sanitised</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Storage areas checked &mdash; allergen items sealed, labelled, and on correct shelves</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Clean cloths and paper towel stocked</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Hand wash station stocked with soap and paper towels</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Allergen menu matrix displayed and up to date</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Emergency response card visible in kitchen</div></div>
+  </div>
+
+  <div class="checklist-section">
+    <h3>During Service (When Allergy Order Received)</h3>
+    <div class="check-item"><div class="checkbox"></div><div>Hands washed with soap and warm water (not just sanitiser)</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Clean gloves put on (non-latex)</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Prep area wiped down with clean cloth, warm water, and detergent</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Clean, separate utensils used for allergen-free preparation</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>All ingredients checked against allergen matrix / PIFs</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>All kitchen staff notified that an allergy meal is being prepared</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Allergy meal prepared BEFORE other meals (where possible)</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Bowl/plate checked for cleanliness &mdash; no food residue</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Allergy identification card placed with meal</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Meal sent out FIRST and confirmed with serving staff</div></div>
+  </div>
+
+  <div class="checklist-section">
+    <h3>After Service</h3>
+    <div class="check-item"><div class="checkbox"></div><div>All surfaces cleaned with warm water and detergent</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>All equipment disassembled and cleaned (blenders, mixers, whisks)</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Storage areas tidied &mdash; spills cleaned, containers sealed</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Dirty tea towels and cloths sent to laundry (NOT reused)</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Any ingredient changes or new stock received noted for matrix update</div></div>
+    <div class="check-item"><div class="checkbox"></div><div>Any allergen incidents or near misses reported</div></div>
+  </div>
+
+  <div class="checklist-section">
+    <h3>Reminder: What Does NOT Remove Allergens</h3>
+    <div class="alert alert-danger" style="margin: 0;">
+      <ul style="margin: 0;">
+        <li>Sanitiser alone (must clean with detergent first)</li>
+        <li>Hand sanitiser (must wash hands with soap and water)</li>
+        <li>Wiping hands on a tea towel</li>
+        <li>Using a dirty or used cloth</li>
+        <li>Rinsing with water only (need detergent)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sign-off">
+      <div>
+        <label>Completed By (Print Name):</label>
+        <div class="sign-off-field"></div>
+      </div>
+      <div>
+        <label>Signature:</label>
+        <div class="sign-off-field"></div>
+      </div>
+      <div>
+        <label>Checked By (Supervisor):</label>
+        <div class="sign-off-field"></div>
+      </div>
+      <div>
+        <label>Date:</label>
+        <div class="sign-off-field"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="module-footer">
+    <p>RaRa Ramen &mdash; Allergen Cleaning Checklist &copy; 2026 | Print for daily use</p>
+  </div>
+
+</body>
+</html>

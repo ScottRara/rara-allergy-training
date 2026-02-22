@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleaning &amp; Sanitising Quick Reference | RaRa Ramen</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .ref-card {
+      border: 3px solid var(--rara-red);
+      border-radius: 12px;
+      padding: 24px;
+      background: white;
+      max-width: 700px;
+      margin: 0 auto 24px;
+      page-break-inside: avoid;
+    }
+    .ref-title {
+      background: var(--rara-red);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .ref-steps {
+      counter-reset: refstep;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .ref-steps li {
+      counter-increment: refstep;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .ref-steps li:last-child { border-bottom: none; }
+    .ref-steps li::before {
+      content: counter(refstep);
+      background: var(--rara-red);
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85em;
+      flex-shrink: 0;
+    }
+    .temp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 12px 0;
+    }
+    .temp-box {
+      background: #FFF3E0;
+      border: 2px solid #E65100;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+    .temp-box .temp { font-size: 1.8em; font-weight: 700; color: #E65100; }
+    .temp-box .label { font-size: 0.8em; color: #555; margin-top: 4px; }
+    .dont-list {
+      background: #FFEBEE;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 12px 0;
+    }
+    .dont-list li { color: #B71C1C; }
+    .dont-list li::before { content: "✗ "; font-weight: 700; }
+    .do-list {
+      background: #E8F5E9;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 12px 0;
+    }
+    .do-list li { color: #1B5E20; }
+    .do-list li::before { content: "✓ "; font-weight: 700; }
+    .dont-list, .do-list { list-style: none; padding-left: 20px; }
+    .color-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+    .color-dot {
+      width: 20px; height: 20px; border-radius: 4px; flex-shrink: 0;
+      border: 1px solid #ccc;
+    }
+    @media print {
+      body { max-width: 100%; background: white; padding: 10px; }
+      .nav-bar, .module-footer { display: none; }
+      .ref-card { max-width: 100%; border-width: 2px; margin: 12px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <a href="../index.html">&larr; Course Home</a>
+    <span>Quick Reference</span>
+    <a href="../modules/cleaning-and-sanitising.html">Full Module &rarr;</a>
+  </div>
+
+  <div style="text-align:center; margin-bottom:24px;">
+    <h1 style="color: var(--rara-red);">Cleaning &amp; Sanitising Quick Reference</h1>
+    <p style="color: var(--text-secondary);">RaRa Ramen &mdash; Print and display in kitchen</p>
+  </div>
+
+  <!-- Card 1: The 6 Steps -->
+  <div class="ref-card">
+    <div class="ref-title">THE 6-STEP CLEANING &amp; SANITISING PROCEDURE</div>
+    <ol class="ref-steps">
+      <li><strong>Pre-Clean:</strong> Scrape/wipe food scraps off. Rinse with water.</li>
+      <li><strong>Wash:</strong> Hot water (45&deg;C) + detergent. Soak if needed. Scrub.</li>
+      <li><strong>Rinse:</strong> Rinse off detergent and loosened residue.</li>
+      <li><strong>Sanitise:</strong> Apply heat (77&deg;C+) or food-grade chemical sanitiser. Allow contact time.</li>
+      <li><strong>Final Rinse:</strong> Rinse off sanitiser (if manufacturer requires it).</li>
+      <li><strong>Air Dry:</strong> Air dry or use single-use paper towel. NEVER use tea towels.</li>
+    </ol>
+    <div style="text-align:center; margin-top:12px; padding:8px; background:#FFEBEE; border-radius:6px; font-weight:600; color:#B71C1C;">
+      Sanitising does NOT work on dirty surfaces. ALWAYS clean first!
+    </div>
+  </div>
+
+  <!-- Card 2: Temperatures -->
+  <div class="ref-card">
+    <div class="ref-title">KEY TEMPERATURES</div>
+    <div class="temp-grid">
+      <div class="temp-box">
+        <div class="temp">45&deg;C</div>
+        <div class="label">Hand wash water</div>
+      </div>
+      <div class="temp-box">
+        <div class="temp">77&deg;C</div>
+        <div class="label">Hand sanitise rinse<br>(30 seconds min)</div>
+      </div>
+      <div class="temp-box">
+        <div class="temp">66&ndash;71&deg;C</div>
+        <div class="label">Dishwasher wash cycle<br>(60 seconds)</div>
+      </div>
+      <div class="temp-box">
+        <div class="temp">82&deg;C</div>
+        <div class="label">Dishwasher sanitise rinse<br>(10 seconds)</div>
+      </div>
+    </div>
+    <p style="text-align:center; font-size:0.85em; color:#B71C1C; font-weight:600;">NEVER use economy/eco dishwasher cycles &mdash; temperatures too low!</p>
+  </div>
+
+  <!-- Card 3: Chemical Bleach -->
+  <div class="ref-card">
+    <div class="ref-title">BLEACH SANITISER DILUTION (10% CHLORINE)</div>
+    <div style="text-align:center; font-size:1.5em; font-weight:700; color: var(--rara-dark); padding:12px;">
+      1 mL bleach &rarr; 1 Litre COLD water
+    </div>
+    <p style="text-align:center;">Contact time: <strong>minimum 7 seconds</strong> on surface</p>
+    <p style="text-align:center; font-size:0.85em; color:#555;">Use cold water (hot water evaporates chlorine). Always check SDS for specific products.</p>
+  </div>
+
+  <!-- Card 4: Handwashing -->
+  <div class="ref-card">
+    <div class="ref-title">HANDWASHING PROCEDURE</div>
+    <ol class="ref-steps">
+      <li><strong>Wet</strong> hands under warm running water</li>
+      <li><strong>Apply</strong> liquid soap (not bar soap)</li>
+      <li><strong>Scrub 15&ndash;30 seconds</strong> &mdash; palms, between fingers, under nails, backs, thumbs, wrists</li>
+      <li><strong>Rinse</strong> under clean running water</li>
+      <li><strong>Turn off tap</strong> with paper towel or elbow</li>
+      <li><strong>Dry completely</strong> with single-use paper towel</li>
+    </ol>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:12px;">
+      <div>
+        <strong style="color:#1B5E20;">Do:</strong>
+        <ul class="do-list" style="margin:4px 0;">
+          <li>Use dedicated handwash basin</li>
+          <li>Liquid soap dispenser</li>
+          <li>Single-use paper towels</li>
+          <li>15&ndash;30 sec scrub time</li>
+        </ul>
+      </div>
+      <div>
+        <strong style="color:#B71C1C;">Don't:</strong>
+        <ul class="dont-list" style="margin:4px 0;">
+          <li>Use hand sanitiser instead</li>
+          <li>Dry on apron or tea towel</li>
+          <li>Use food prep sink</li>
+          <li>Skip drying step</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5: Chopping Board Colours -->
+  <div class="ref-card">
+    <div class="ref-title">COLOUR-CODED CHOPPING BOARDS</div>
+    <div style="max-width:300px; margin:0 auto;">
+      <div class="color-row"><div class="color-dot" style="background:#D32F2F;"></div><strong>Red</strong> &mdash; Raw meat</div>
+      <div class="color-row"><div class="color-dot" style="background:#1565C0;"></div><strong>Blue</strong> &mdash; Raw fish / seafood</div>
+      <div class="color-row"><div class="color-dot" style="background:#FFD600;"></div><strong>Yellow</strong> &mdash; Raw poultry</div>
+      <div class="color-row"><div class="color-dot" style="background:#2E7D32;"></div><strong>Green</strong> &mdash; Fruits &amp; vegetables</div>
+      <div class="color-row"><div class="color-dot" style="background:#FFFFFF;"></div><strong>White</strong> &mdash; Bread / bakery / dairy</div>
+      <div class="color-row"><div class="color-dot" style="background:#795548;"></div><strong>Brown</strong> &mdash; Cooked meat</div>
+    </div>
+    <p style="text-align:center; margin-top:12px; font-size:0.85em; color:#555;">Clean and sanitise between EVERY use. Dispose of damaged boards immediately.</p>
+  </div>
+
+  <!-- Card 6: 4-Hour Rule -->
+  <div class="ref-card">
+    <div class="ref-title">EQUIPMENT SANITISING FREQUENCY</div>
+    <div style="text-align:center; padding:16px;">
+      <p style="font-size:1.3em; font-weight:700; color:var(--rara-dark);">Equipment touching hazardous food at room temperature:</p>
+      <p style="font-size:2.5em; font-weight:700; color:var(--rara-red);">Every 4 Hours</p>
+      <p style="font-size:0.9em; color:#555;">(Slicers, blenders, stick mixers, prep surfaces)</p>
+    </div>
+    <p style="text-align:center; font-weight:600; color:var(--rara-dark);">"Clean as you go" &mdash; don't wait until end of service!</p>
+  </div>
+
+  <div class="module-footer">
+    <p>RaRa Ramen &mdash; Cleaning &amp; Sanitising Quick Reference &copy; 2026</p>
+    <p>Source: Food Safety Supervisor course (NotebookLM) &amp; NSW Food Authority</p>
+    <p>Print, laminate, and display in kitchen areas</p>
+  </div>
+
+</body>
+</html>

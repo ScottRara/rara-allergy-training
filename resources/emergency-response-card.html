@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Response Card | RaRa Ramen</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .emergency-card {
+      border: 4px solid #D32F2F;
+      border-radius: 12px;
+      padding: 30px;
+      background: white;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .emergency-title {
+      background: #D32F2F;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .emergency-step {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+    .emergency-num {
+      background: #D32F2F;
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.3em;
+      flex-shrink: 0;
+    }
+    .emergency-text { flex: 1; }
+    .emergency-text strong { display: block; font-size: 1.1em; margin-bottom: 4px; }
+    .call-box {
+      background: #D32F2F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 2em;
+      font-weight: 700;
+      margin: 20px 0;
+      letter-spacing: 4px;
+    }
+    .signs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .sign-box {
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+    .sign-mild { background: #FFF3E0; border: 1px solid #E65100; }
+    .sign-severe { background: #FFEBEE; border: 1px solid #D32F2F; }
+    @media print {
+      body { max-width: 100%; background: white; padding: 0; }
+      .nav-bar, .module-footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <a href="../index.html">&larr; Course Home</a>
+    <span>Resource</span>
+    <a href="cleaning-checklist.html">Cleaning Checklist &rarr;</a>
+  </div>
+
+  <div class="emergency-card">
+    <div class="emergency-title">ALLERGIC REACTION EMERGENCY RESPONSE</div>
+    <p style="text-align:center; font-weight:600; margin-bottom:20px;">RaRa Ramen &mdash; Display in Kitchen &amp; Front Counter</p>
+
+    <h3 style="color: #E65100; margin-bottom: 10px;">MILD / MODERATE SIGNS:</h3>
+    <div class="signs-grid">
+      <div class="sign-box sign-mild">Swelling of lips, face, eyes</div>
+      <div class="sign-box sign-mild">Hives or welts</div>
+      <div class="sign-box sign-mild">Tingling mouth</div>
+      <div class="sign-box sign-mild">Abdominal pain, vomiting</div>
+    </div>
+
+    <h3 style="color: #D32F2F; margin-bottom: 10px;">SEVERE SIGNS (ANAPHYLAXIS):</h3>
+    <div class="signs-grid">
+      <div class="sign-box sign-severe">Difficult/noisy breathing</div>
+      <div class="sign-box sign-severe">Swelling of tongue</div>
+      <div class="sign-box sign-severe">Throat swelling/tightness</div>
+      <div class="sign-box sign-severe">Wheeze or persistent cough</div>
+      <div class="sign-box sign-severe">Difficulty talking / hoarse voice</div>
+      <div class="sign-box sign-severe">Dizziness or collapse</div>
+      <div class="sign-box sign-severe" style="grid-column: span 2;">Pale and floppy (young children)</div>
+    </div>
+
+    <hr style="margin: 24px 0; border-color: #D32F2F;">
+
+    <h3 style="color: #D32F2F; margin-bottom: 16px;">WHAT TO DO:</h3>
+
+    <div class="emergency-step">
+      <div class="emergency-num">1</div>
+      <div class="emergency-text">
+        <strong>LAY THE PERSON FLAT</strong>
+        Do NOT allow them to stand or walk. If breathing is difficult, allow them to sit with legs outstretched.
+      </div>
+    </div>
+
+    <div class="emergency-step">
+      <div class="emergency-num">2</div>
+      <div class="emergency-text">
+        <strong>GIVE ADRENALINE (EpiPen)</strong>
+        Follow the customer's ASCIA Action Plan if they have one. Administer their adrenaline injector if available. Instructions are on the device.
+      </div>
+    </div>
+
+    <div class="emergency-step">
+      <div class="emergency-num">3</div>
+      <div class="emergency-text">
+        <strong>CALL AN AMBULANCE</strong>
+        Call Triple Zero immediately. State "anaphylaxis."
+      </div>
+    </div>
+
+    <div class="call-box">CALL 000</div>
+
+    <div class="emergency-step">
+      <div class="emergency-num">4</div>
+      <div class="emergency-text">
+        <strong>STAY WITH THE PERSON</strong>
+        Monitor breathing. Do not leave them alone until the ambulance arrives.
+      </div>
+    </div>
+
+    <div class="emergency-step">
+      <div class="emergency-num">5</div>
+      <div class="emergency-text">
+        <strong>PRESERVE THE FOOD</strong>
+        Keep the food the customer was eating. Freeze and label it for investigation.
+      </div>
+    </div>
+
+    <hr style="margin: 24px 0;">
+
+    <p style="text-align:center; font-size:0.9em; color: var(--text-secondary);">
+      <strong>After the incident:</strong> Complete an incident report. Notify the Food Safety Supervisor. Conduct an internal investigation.
+    </p>
+  </div>
+
+  <div class="module-footer">
+    <p>RaRa Ramen &mdash; Emergency Response Card &copy; 2026 | Print and laminate for kitchen display</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allergen Menu Matrix Template | RaRa Ramen</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .matrix-table { font-size: 0.85em; }
+    .matrix-table th { padding: 8px 6px; text-align: center; font-size: 0.8em; }
+    .matrix-table td { padding: 8px 6px; text-align: center; }
+    .matrix-table td:first-child { text-align: left; font-weight: 600; }
+    .contains { background: #FFCDD2; color: #B71C1C; font-weight: 700; }
+    .may-contain { background: #FFF9C4; color: #F57F17; font-weight: 600; }
+    .safe { background: #C8E6C9; }
+    @media print {
+      body { max-width: 100%; font-size: 11px; }
+      .nav-bar, .module-footer, .alert { display: none; }
+      .section { padding: 10px; border: 1px solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <a href="../index.html">&larr; Course Home</a>
+    <span>Resource</span>
+    <a href="emergency-response-card.html">Emergency Card &rarr;</a>
+  </div>
+
+  <div class="module-header">
+    <div class="module-number">Resource</div>
+    <h1>Allergen Menu Matrix Template</h1>
+    <div class="learning-objective">
+      <strong>Instructions:</strong> Print this template and complete it for your store. Update it whenever ingredients or recipes change. Keep it accessible to all staff at all times.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>RaRa Ramen &mdash; Allergen Menu Matrix</h2>
+    <p><strong>Store:</strong> _________________ &nbsp;&nbsp; <strong>Date Updated:</strong> _________________ &nbsp;&nbsp; <strong>Updated By:</strong> _________________</p>
+
+    <div class="alert alert-info">
+      <strong>Key:</strong>
+      <span class="contains" style="padding: 2px 8px; border-radius: 4px; margin-left: 8px;">C</span> = Contains &nbsp;&nbsp;
+      <span class="may-contain" style="padding: 2px 8px; border-radius: 4px;">MC</span> = May Contain &nbsp;&nbsp;
+      <span class="safe" style="padding: 2px 8px; border-radius: 4px;">-</span> = Not Present
+    </div>
+
+    <div style="overflow-x: auto;">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th style="text-align:left; min-width:160px;">Menu Item</th>
+            <th>Wheat /<br>Gluten</th>
+            <th>Eggs</th>
+            <th>Milk<br>(Dairy)</th>
+            <th>Soy</th>
+            <th>Sesame</th>
+            <th>Peanuts</th>
+            <th>Tree<br>Nuts</th>
+            <th>Fish</th>
+            <th>Crust-<br>aceans</th>
+            <th>Molluscs</th>
+            <th>Lupin</th>
+            <th>Sulph-<br>ites</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="13" style="background:var(--rara-dark); color:white; font-weight:700;">RAMEN</td></tr>
+          <tr>
+            <td>Tonkotsu Ramen</td>
+            <td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Shoyu Ramen</td>
+            <td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="contains">C</td><td class="may-contain">MC</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Miso Ramen</td>
+            <td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Spicy Ramen</td>
+            <td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="may-contain">MC</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Vegan Ramen</td>
+            <td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+
+          <tr><td colspan="13" style="background:var(--rara-dark); color:white; font-weight:700;">SIDES</td></tr>
+          <tr>
+            <td>Gyoza (Pork)</td>
+            <td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Prawn Tempura</td>
+            <td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Edamame</td>
+            <td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Karaage Chicken</td>
+            <td class="contains">C</td><td class="contains">C</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+
+          <tr><td colspan="13" style="background:var(--rara-dark); color:white; font-weight:700;">TOPPINGS</td></tr>
+          <tr>
+            <td>Ajitama Egg</td>
+            <td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Chashu Pork</td>
+            <td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Nori (Seaweed)</td>
+            <td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Sesame Seeds</td>
+            <td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+          <tr>
+            <td>Chilli Oil / La-yu</td>
+            <td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="contains">C</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td><td class="safe">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top: 16px; font-size: 0.85em; color: var(--text-secondary);"><strong>Note:</strong> This is a TEMPLATE with example data. Your Food Safety Supervisor must verify and update all allergen information based on your actual recipes and ingredients. Empty rows are provided below for additional menu items.</p>
+
+    <div style="margin-top: 20px; border-top: 2px dashed var(--border-light); padding-top: 16px;">
+      <p><strong>Additional Menu Items:</strong></p>
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th style="text-align:left; min-width:160px;">Menu Item</th>
+            <th>Wheat</th><th>Eggs</th><th>Milk</th><th>Soy</th><th>Sesame</th><th>Peanuts</th><th>Tree Nuts</th><th>Fish</th><th>Crust.</th><th>Molluscs</th><th>Lupin</th><th>Sulph.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="module-footer">
+    <p>RaRa Ramen &mdash; Allergen Menu Matrix Template &copy; 2026 | Print this page for kitchen use</p>
+  </div>
+
+</body>
+</html>
